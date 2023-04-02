@@ -1,0 +1,12 @@
+package tests;
+
+public class Demo {
+	
+	
+	@Test
+	public void firstTest() {
+		
+		System.out.println("Hello World");
+	}
+
+}

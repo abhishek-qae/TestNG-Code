@@ -1,0 +1,100 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+
+import Pages.logincrmelement;
+import config.Base;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class logincrm extends Base {
+
+	WebDriver driver;
+
+
+	@Given("User is on login page")
+	public void user_is_on_login_page() throws InterruptedException {
+
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
+
+		driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		driver.navigate().to("https://ui.cogmento.com/");	
+
+		System.out.println("User is on login page");
+		
+		System.out.println("This is for git demo");
+		
+		
+		
+	}
+
+	@When("User enter valid {string} and {string}")
+	public void user_enter_valid_and(String uname, String upassword) throws InterruptedException {
+
+		logincrmelement ln = new logincrmelement(driver);
+
+        Thread.sleep(2000);
+
+		ln.userLogin("1118abhi@gmail.com", "Abhicrm1234");
+
+		System.out.println("Uses enter email and password");
+	}
+
+	@And("User hit login button")
+	public void user_hit_login_button()  {
+
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+		logincrmelement ln = new logincrmelement(driver);
+
+		ln.hitloginButton();
+
+		//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Home']")));
+
+		//element.click();
+
+		System.out.println("Uses hit login button");
+	}
+
+	@Then("User navigate on Home page")
+	public void user_navigate_on_home_page() {
+
+
+
+	}
+
+	@When("User enter invalid {string} and {string}")
+	public void user_enter_invalid_and(String string, String string2) {
+
+	}
+
+	@Then("User gets invalid login message")
+	public void user_gets_invalid_login_message() {
+
+	}
+
+	@When("User hit forgot your password link")
+	public void user_hit_forgot_your_password_link() {
+
+	}
+
+	@And("User navigate to forgot password page")
+	public void user_navigate_to_forgot_password_page() {
+
+	}
+
+}
