@@ -1,6 +1,6 @@
 package tests;
 
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
 
@@ -19,10 +19,6 @@ public class DemoTest {
 		System.out.println("Hello TestNG");
 	}
 	
-	@BeforeTest
-	public void preReq() {
-		
-		System.out.println("I'll execute first");
-	}
+	
 
 }
