@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-02T21:28:49 IST" name="Suite" finished-at="2023-04-02T21:28:49 IST" duration-ms="45">
+  <suite started-at="2023-04-02T23:27:24 IST" name="Suite" finished-at="2023-04-02T23:27:24 IST" duration-ms="57">
     <groups>
+      <group name="smoke">
+        <method signature="DemoTest.demo()[pri:0, instance:tests.DemoTest@355ce81c]" name="demo" class="tests.DemoTest"/>
+        <method signature="DummyTest.dummy()[pri:0, instance:tests.DummyTest@72cde7cc]" name="dummy" class="tests.DummyTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-04-02T21:28:49 IST" name="smoketest" finished-at="2023-04-02T21:28:49 IST" duration-ms="45">
+    <test started-at="2023-04-02T23:27:24 IST" name="smoketest" finished-at="2023-04-02T23:27:24 IST" duration-ms="57">
       <class name="tests.DemoTest">
-        <test-method signature="demo()[pri:0, instance:tests.DemoTest@52102734]" started-at="2023-04-02T21:28:49 IST" name="demo" finished-at="2023-04-02T21:28:49 IST" duration-ms="5" status="PASS">
+        <test-method signature="demo()[pri:0, instance:tests.DemoTest@355ce81c]" started-at="2023-04-02T23:27:24 IST" name="demo" finished-at="2023-04-02T23:27:24 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-        <test-method signature="demo2()[pri:0, instance:tests.DemoTest@52102734]" started-at="2023-04-02T21:28:49 IST" name="demo2" finished-at="2023-04-02T21:28:49 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo2 -->
       </class> <!-- tests.DemoTest -->
       <class name="tests.DummyTest">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:tests.DummyTest@6b8ca3c8]" started-at="2023-04-02T21:28:49 IST" name="setupBrowser" finished-at="2023-04-02T21:28:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="dummy()[pri:0, instance:tests.DummyTest@6b8ca3c8]" started-at="2023-04-02T21:28:49 IST" name="dummy" finished-at="2023-04-02T21:28:49 IST" duration-ms="2" status="PASS">
+        <test-method signature="dummy()[pri:0, instance:tests.DummyTest@72cde7cc]" started-at="2023-04-02T23:27:24 IST" name="dummy" finished-at="2023-04-02T23:27:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummy -->
-        <test-method is-config="true" signature="turnDown()[pri:0, instance:tests.DummyTest@6b8ca3c8]" started-at="2023-04-02T21:28:49 IST" name="turnDown" finished-at="2023-04-02T21:28:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- turnDown -->
       </class> <!-- tests.DummyTest -->
     </test> <!-- smoketest -->
   </suite> <!-- Suite -->
